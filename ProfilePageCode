@@ -1,123 +1,110 @@
-<!-- CSS -->
 <script>
 
 .bgccustom1 {
   background-color: #DA221E;
 }
+
 .bgccustom2 {
   background-color: #5EABED;
 }
+
 .bgccustom3 {
   background-color: #AD1DA5;
 }
+
 .bgccustom4 {
   background-color: #7EA;
 }
+
 .box1 {
   background-color: #DA221E;
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
 .custbutton1 {
   background-color: #5EABED;
   color: white;
   font-size: 12px;
   width: 100px;
 }
+
 .custbutton2 {
   background-color: #AD1DA5;
   color: white;
   font-size: 12px;
   width: 100px;
 }
+
 .custbutton3 {
   background-color: #7EA;
   color: black;
   font-size: 12px;
   width: 100px;
 }
+
 .ProfilePicture {
   width: 250px;
 }
+
 .FreezeHeader {
   position: fixed;
+  top:  0;
+  left: 0;
   height:  35px;
   width:  100%;
-}
-.FreezeHeader1 {
-  height: 35px;
-}
-.FlowContent {
-  position: adsolute;
-  top: 35px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  overflow-y:scroll;
 }
 
 </script>
 
-<!-- Create three sections (top, bottom, middle) -->
-<html>
-  <div class="container-fluid bgccustom1">
-    <!-- Header -->
-    <head id="TOP">
-      <div class="row bgccustom1 box1 FreezeHeader">
-        <h4 class="col-md-6 text-center"><strong>Joseph Spaulding</strong></h4>
-        <div class="col-md-6 col-xs-6 row" id="HeaderButtonWell">
-          <div class="col-md-2 col-xs-2">
-            <button class="btn btn-default target custbutton1" id="button1"><a href="#ABOUT">ABOUT</a></button>
-          </div>
-          <div class="col-md-2 col-xs-2">
-            <button class="btn btn-default target custbutton2" id="button2"><a href="#PORTFOLIO">PORTFOLIO</a></button>
-          </div>
-          <div class="col-md-2 col-xs-2">
-            <button class="btn btn-default target custbutton3" id="button3"><a href="#CONTACT">CONTACT</a></button>
-          </div>
-        </div>
+<!-- Create three sections (top, bottom, middle)-->
+<head>
+	<title>Joseph Spaulding Profile</title>
+</head>
+<div class="container-fluid bgccustom1">
+  <div class="row bgccustom1 box1 FreezeHeader">
+    <h4 class="col-md-6 text-center" id="Header"><strong>Joseph Spaulding</strong></h4>
+    <div class="col-md-6 col-xs-6 row" id="HeaderButtonWell">
+      <div class="col-md-2 col-xs-2">
+        <button class="btn btn-default target custbutton1" id="button1">ABOUT</button>
       </div>
-    </head>
-    <!-- Body -->
-    <body>
-      <div class="bgccustom2 FlowContent">
-        <!-- About Me section -->
-        <h3 class="text-center" id="ABOUT">About Me:</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="text-justify">I am an entry-level programmer looking for a paradigm shift.  My education lies in foreign languages and history, but computer languages have created a new interest.  They are like a language that you can build with.  My exposure, so far, is with C++, visual basic, Ruby, html and css.</p>
-          </div>
-          <div class="col-md-6">
-            <img class="ProfilePicture" src="https://avatars2.githubusercontent.com/u/29109626?v=3&s=400" alt="Profile Picture">
-          </div>
-        </div>
-      </div><hr /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <div class="bgccustom3">
-        <!-- Portfolio Section -->
-        <h3 class="text-center" id="PORTFOLIO">Portfolio:</h3>
-        <div = "row">
-          <!-- These columns aren't working right now.  Must review -->
-          <div = "col-md-6">
-            <p>Click <a href="https://codepen.io/Joespauld/full/RgNLga/" target="_blank">here</a> for my Tribute Page.</p>
-          </div>
-          <div = "col-md-6">
-            <p>Click<a href="https://codepen.io/Joespauld/full/EXawjO/" target="_blank"> here </a>for my Hello World page.</p>
-          </div>
-        </div>
-        <p> maybe insert some works of art that I like?  Something to fill in some space. </p>
-        <img src="http://latikono.deviantart.com/art/The-Young-Martyr-18463644" alt="Paul DeLeRoche's The Young Martyr">
-      </div><hr /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <div class="bgccustom4">
-        <!-- Contact Me Section -->
-        <!-- Add address section.  Not sure how much info to put here.  -->
-        <h3 class="text-center" id="CONTACT">Contact Me:</h3>
-        <address>
-          <p>Please feel free to <a href="mailto:jspauld@icloud.com">Email me</a>.</p>
-          <p>Insert buttons with links to my social media page</p>
-        </address>
-      </div><hr />
-      <p>Return to <a href="#TOP">top</a> of page?</p>
-    </body>
+      <div class="col-md-2 col-xs-2">
+        <button class="btn btn-default target custbutton2" id="button2">PORTFOLIO</button>
+      </div>
+      <div class="col-md-2 col-xs-2">
+        <button class="btn btn-default target custbutton3" id="button3">CONTACT</button>
+      </div>
+    </div>
   </div>
-</html>
-    
+  <hr />
+  <div class="bgccustom2">
+    <h3 class="text-center" id="AboutMe">About Me:</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-justify">I am an entry-level programmer looking for a paradigm shift.  My education lies in foreign languages and history, but computer languages have created a new interest.  They are like a language that you can build with.  My exposure, so far, is with C++, visual basic, Ruby, html and css.</p>
+      </div>
+      <div class="col-md-6">
+        <img class="ProfilePicture" src="https://avatars2.githubusercontent.com/u/29109626?v=3&s=400" alt="Profile Picture">
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="bgccustom3">
+    <h3 class="text-center" id="Portfolio">Portfolio:</h3>
+    <div = "row">
+      <div = "col-md-6">
+        <p>Click <a href="https://codepen.io/Joespauld/full/RgNLga/" target="_blank">here</a> for my Tribute Page.</p>
+      </div>
+      <div = "col-md-6">
+        <p>Click<a href="https://codepen.io/Joespauld/full/EXawjO/" target="_blank"> here </a>for my Hello World page.</p>
+      </div>
+    </div>
+    <p> maybe insert some works of art that I like?  Something to fill in some space. </p>
+    <img src="http://latikono.deviantart.com/art/The-Young-Martyr-18463644" alt="Paul DeLeRoche's The Young Martyr">
+  </div>
+  <hr />
+  <div class="bgccustom4">
+    <h3 class="text-center">Contact Me:</h3>
+    <p>Insert buttons with links to my facebook page</p>
+  </div>
+</div>
